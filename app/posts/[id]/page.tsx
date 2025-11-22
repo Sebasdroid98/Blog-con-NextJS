@@ -13,7 +13,8 @@ interface Params {
 }
 
 export default async function PostPage({ params }: Params) {
-  const post = await fetchAPI<Post>(`posts/${params.id}`);
+  const { id } = await params; // se desestructuran los parametros y se establecen como await para poder obtenerlos
+  const post = await fetchAPI<Post>(`posts/${id}`); 
 
   return (
     <article className="p-6">
