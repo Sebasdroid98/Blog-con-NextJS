@@ -180,13 +180,13 @@ export default function Home() {
             </div>
           </li>
         </ul> */}
-        <List>
+        {/* <List>
           {items.map((item, key) => (
             <>
               <ListItem name={item.name} email="ssss" ids={key}/>
             </>
           ))}
-        </List>
+        </List> */}
       </main>
 
       <Footer />
